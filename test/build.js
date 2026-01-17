@@ -60,8 +60,8 @@ describe('minifier', () => {
 	});
 
 	const styles = [
-		'@import "./1";',
-		'@import "./2.scss";',
+		'@use "./1";',
+		'@use "./2.scss";',
 	].join('\n');
 	const paths = [
 		path.resolve(__dirname, './files'),

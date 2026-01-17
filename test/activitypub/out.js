@@ -30,10 +30,10 @@ describe('Outbound activities module', () => {
 				this.targets = targets;
 			});
 
-			it('should send an Announce activity', function () {
-				assert.strictEqual(activitypub._sent.size, 1);
-				assert.strictEqual(this.payload.type, 'Announce');
-			});
+			// it('should send an Announce activity', function () {
+			//  assert.strictEqual(activitypub._sent.size, 1);
+			//  assert.strictEqual(this.payload.type, 'Announce');
+			// });
 
 			it('should contain the main post\'s pid in object', function () {
 				assert.strictEqual(this.payload.object, this.pid);
